@@ -1,9 +1,8 @@
-def F(n):
-    if n > 2:
-        return F(n - 1)+ G(n - 2)
-    else: return n
-def G(n):
-    if n > 2:
-        return G(n - 1)+ F(n - 2)
-    else: return n+1
-print(F(6))
+char = []
+quit = True
+while quit == True:
+    inputChar = input("Символ: ")
+    if inputChar == "q":
+        quit = False
+    char.append(inputChar)
+print(char)
